@@ -2,9 +2,9 @@ var Queue = function() {
   // Hey! Rewrite in the new style. Your code will wind up looking very similar,
   // but try not not reference your old code in writing the new style.
   var storage = {};
-  var container = storage.container = {};
-  var enter = storage.enter = 0;
-  var exit = storage.exit = 0;
+  storage.container = {};
+  storage.enter = 0;
+  storage.exit = 0;
   _.extend(storage, queueMethods);
   return storage;
 };
